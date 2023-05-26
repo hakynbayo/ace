@@ -42,7 +42,7 @@ function Card() {
             <div className={styles.data}>
               <span className={styles.title}>company</span>
               <span className={styles.value}>
-                <img src={apple} alt="apple" />
+                <img src={apple} alt="apple" className={styles.apple} />
                 <span className={styles.innerText}>apple</span>
               </span>
             </div>

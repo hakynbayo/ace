@@ -237,26 +237,37 @@
 
 @media (max-width: 672px) {
  .checkout{
-  width: 70%;
+  width: 40%;
   height: 28em;
   font-size: 11px;
  }
  .creditCard{
   position: relative;
   bottom: 5em;
-  left: -5em;
+  left: -10em;
  }
  .checkout .blu{
   display:none;
  }
  .checkout .checkoutDetails{
+  width: 155px;
+  font-size: 9px;
   position: relative;
-  bottom: 28em;
-  left: 3em;
+  bottom: 34em;
+  left: -1em;
  }
   .purchaseData{
   position: relative;
   top: -1em;
+ }
+ .innerText{
+  margin-left: -3em;
+ }
+ .apple {
+  display: none;
+}
+ .purchaseTotal img{
+  margin-left: -3em;
  }
  .divider .right {
   right: -12px;
