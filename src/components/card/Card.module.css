@@ -1,0 +1,268 @@
+.checkout {
+  position: relative;
+  height: 100%;
+  width: 130%;
+  float: right;
+}
+.creditCard {
+  width: 16em;
+  height: 23.4em;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.6), #fff);
+  backdrop-filter: blur(15px);
+  padding: 2em;
+  border-radius: 1em;
+  box-shadow: 0px 4px 14px 2px rgba(224, 224, 224, 0.6);
+  position: relative;
+  z-index: 99;
+  left: 50%;
+  transform: translate(-50%, 0);
+  overflow: hidden;
+}
+ .creditCardHead {
+  position: relative;
+  left: -4em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: initial;
+  margin-bottom: 8em;
+}
+.creditCardHead img {
+  height: 1.8em;
+}
+ .chip {
+  height: 3.5em;
+  margin-right: 1.5rem;
+}
+ .creditCardBody {
+  position: relative;
+  color: #05365c;
+}
+.creditCardBody span {
+  display: block;
+}
+ .holder {
+  text-transform: capitalize;
+  font-size: 0.95em;
+  font-weight: 500;
+  margin-bottom: 0.5em;
+  color: #616161;
+}
+ .cardDigits {
+  display: flex;
+  margin-bottom: 0.5em;
+}
+ .hiddenDigits {
+  display: flex;
+  align-items: center;
+  justify-content: initial;
+  flex-direction: initial;
+  margin-right: 0.5em;
+}
+ .hiddenDigits .circle {
+  height: 0.4em;
+  width: 0.4em;
+  border-radius: 50%;
+  background-color: #17254c;
+  margin-right: 0.4em;
+}
+.visibleDigits {
+  font-size: 1.1em;
+  font-weight: 700;
+}
+.creditCardFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: initial;
+  position: relative;
+  top: 1.4em;
+}
+ .expiry {
+  font-size: 1em;
+  font-weight: 600;
+}
+.creditCardFooter .logo {
+  height: 2.5em;
+}
+.cardDesign {
+  width: 700px;
+  height: 700px;
+  border: 1px solid #ebebeb;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 3.5em;
+  left: -6em;
+  z-index: -1;
+}
+.cardDesign .inner {
+  display: inline-block;
+  width: 570px;
+  height: 570px;
+  border-radius: inherit;
+  border: inherit;
+}
+.checkout .blu {
+  display: block;
+  height: 1.5em;
+  width: 5em;
+  background-color: #035fff;
+  position: absolute;
+  top: -7px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.checkout .checkoutDetails {
+  background-color: #f0f3f8;
+  height: 82%;
+  width: 100%;
+  border-radius: 1em;
+  position: absolute;
+  bottom: 0;
+}
+ .purchaseData {
+  position: relative;
+  top: 15.5em;
+  padding: 2em;
+}
+ .purchaseData .data {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: initial;
+  text-transform: capitalize;
+  font-size: 1em;
+  color: #8e96a3;
+  margin-bottom: 1.2em;
+}
+ .purchaseData .data .title {
+  font-size: 0.85em;
+  font-weight: 500;
+}
+ .purchaseData .data .value {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: initial;
+}
+.value img {
+  height: 1.5em;
+}
+  .innerText {
+  color: #05365c;
+  font-weight: 600;
+  margin-left: 0.6em;
+}
+ .divider{
+  position: absolute;
+  bottom: 7.4em;
+  width: 100%;
+  border: 1px dashed #cbcbcb;
+  display: flex;
+  align-items: center;
+}
+.divider .left {
+  position: absolute;
+  height: 2.65em;
+  width: 2.65em;
+  background-color: #fff;
+  border-radius: 50%;
+  bottom: -15px;
+  left: -25px;
+}
+  .divider .right {
+  position: absolute;
+  height: 2.65em;
+  width: 2.65em;
+  background-color: #fff;
+  border-radius: 50%;
+  bottom: -15px;
+  right: -25px;
+}
+
+.divider::before  {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2em;
+  background-color: #f0f3f8;
+  bottom: -30px;
+}
+.purchaseTotal {
+  position: absolute;
+  bottom: -1.1em;
+  width: 100%;
+  padding: 0 2em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: initial;
+}
+  .desc {
+  color: #8e96a3;
+  font-size: 0.9em;
+  font-weight: 500;
+}
+  .tAmount {
+  display: flex;
+  align-items: center;
+  justify-content: initial;
+  flex-direction: initial;
+  color: #05365c;
+} 
+.amount {
+  font-size: 2em;
+  font-weight: 700;
+}
+  .amount sub {
+  font-size: 0.6em;
+  position: relative;
+  bottom: 7px;
+  font-weight: 500;
+}
+.symbol {
+  position: relative;
+  top: 1px;
+  font-size: 1.1em;
+  margin-left: 0.2em;
+  color: #8e96a3;
+}
+ .purchaseTotal img {
+  height: 1.8em;
+}
+
+@media (max-width: 672px) {
+ .checkout{
+  width: 70%;
+  height: 28em;
+  font-size: 11px;
+ }
+ .creditCard{
+  position: relative;
+  bottom: 5em;
+  left: -5em;
+ }
+ .checkout .blu{
+  display:none;
+ }
+ .checkout .checkoutDetails{
+  position: relative;
+  bottom: 28em;
+  left: 3em;
+ }
+  .purchaseData{
+  position: relative;
+  top: -1em;
+ }
+ .divider .right {
+  right: -12px;
+}
+ .divider .left {
+  left: -15px;
+}
+}
+

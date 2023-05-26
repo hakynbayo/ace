@@ -1,82 +1,83 @@
 import React from 'react';
-import '../card/card.css';
-import chip from "../../assets/chip.png"
-import wifi from "../../assets/wifi.png"
-import apple from "../../assets/apple-13.svg"
-import docket from "../../assets/diploma.png"
-import mastercard from "../../assets/mastercard.svg"
+import styles from './Card.module.css';
+
+import chip from "../../assets/chip.png";
+import wifi from "../../assets/wifi.png";
+import apple from "../../assets/apple-13.svg";
+import docket from "../../assets/diploma.png";
+import mastercard from "../../assets/mastercard.svg";
 
 function Card() {
   return (
-    <div className="col-span-12 md:col-span-4">
-      <div className="checkout">
-        <span className="blu"></span>
-        <div className="credit-card">
-          <div className="credit-card__head">
-            <img src={chip} alt="" className="chip" />
-            <img src={wifi} alt="" className="wifi" />
+    <div className={`${styles.colSpan12} ${styles.mdColSpan4}`}>
+      <div className={styles.checkout}>
+        <span className={styles.blu}></span>
+        <div className={styles.creditCard}>
+          <div className={styles.creditCardHead}>
+            <img src={chip} alt="" className={styles.chip} />
+            <img src={wifi} alt="" className={styles.wifi} />
           </div>
-          <div className="credit-card__body">
-            <span className="holder">jonathan micheal</span>
-            <div className="card-digits">
-              <div className="hidden-digits">
-                <span className="circle"></span>
-                <span className="circle"></span>
-                <span className="circle"></span>
-                <span className="circle"></span>
+          <div className={styles.creditCardBody}>
+            <span className={styles.holder}>jonathan micheal</span>
+            <div className={styles.cardDigits}>
+              <div className={styles.hiddenDigits}>
+                <span className={styles.circle}></span>
+                <span className={styles.circle}></span>
+                <span className={styles.circle}></span>
+                <span className={styles.circle}></span>
               </div>
-              <span className="visible-digits">3456</span>
+              <span className={styles.visibleDigits}>3456</span>
             </div>
           </div>
-          <div className="credit-card__footer">
-            <span className="expiry">09/22</span>
-            <img src={mastercard}alt="" className="logo" />
+          <div className={styles.creditCardFooter}>
+            <span className={styles.expiry}>09/22</span>
+            <img src={mastercard} alt="" className={styles.logo} />
           </div>
-          <div className="card__design">
-            <span className="inner"></span>
+          <div className={styles.cardDesign}>
+            <span className={styles.inner}></span>
           </div>
         </div>
-        <div className="checkout-details">
-          <div className="purchase-data">
-            <div className="data">
-              <span className="title">company</span>
-              <span className="value">
+        <div className={styles.checkoutDetails}>
+          <div className={styles.purchaseData}>
+            <div className={styles.data}>
+              <span className={styles.title}>company</span>
+              <span className={styles.value}>
                 <img src={apple} alt="apple" />
-                <span className="inner-text">apple</span>
+                <span className={styles.innerText}>apple</span>
               </span>
             </div>
-            <div className="data">
-              <span className="title">order number</span>
-              <span className="value">
-                <span className="inner-text">1266201</span>
+            <div className={styles.data}>
+              <span className={styles.title}>order number</span>
+              <span className={styles.value}>
+                <span className={styles.innerText}>1266201</span>
               </span>
             </div>
-            <div className="data">
-              <span className="title">product</span>
-              <span className="value">
-                <span className="inner-text">macbook air</span>
+            <div className={styles.data}>
+              <span className={styles.title}>product</span>
+              <span className={styles.value}>
+                <span className={styles.innerText}>macbook air</span>
               </span>
             </div>
-            <div className="data">
-              <span className="title">VAT (20%)</span>
-              <span className="value">
-                <span className="inner-text">$100.00</span>
+            <div className={styles.data}>
+              <span className={styles.title}>VAT (20%)</span>
+              <span className={styles.value}>
+                <span className={styles.innerText}>$100.00</span>
               </span>
             </div>
           </div>
-          <div className="divider">
-            <div className="left"></div>
-            <div className="right"></div>
+          <div className={styles.divider}>
+            <div className={styles.left}></div>
+            <div className={styles.right}></div>
           </div>
-          <div className="purchase-total">
-            <div className="total">
-              <span className="desc">You have to Pay</span>
-              <div className="t-amount">
-                <h1 className="amount">549<sub>.99</sub></h1>
-                <span className="symbol">USD</span>
+          <div className={styles.purchaseTotal}>
+            <div className={styles.total}>
+              <span className={styles.desc}>You have to Pay</span>
+              <div className={styles.tAmount}>
+                <h1 className={styles.amount}>549<sub>.99</sub></h1>
+                <span className={styles.symbol}>USD</span>
               </div>
             </div>
-            <img src={docket} alt="docket" height='26' />
+            <img src={docket} alt="docket" height="26" />
           </div>
         </div>
       </div>

@@ -1,0 +1,322 @@
+
+.form {
+  padding-right: 3em;
+  width: 55vw;
+}
+.formHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: initial;
+  margin-bottom: 5em;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: initial;
+}
+.logoCircle {
+  height: 3em;
+  width: 3em;
+  display: block;
+  background-color: #035fff;
+  border-radius: 50%;
+}
+
+.logo img {
+  height: 1.5em;
+  position: relative;
+  right: 7.2em;
+}
+.logo h1 {
+  font-size: 1.75em;
+  font-weight: 600;
+  margin-left: -3.5em;
+  color: #05365c;
+}
+.formHeader .logo h1 .lean {
+  font-weight: 300;
+}
+.timer {
+  font-size: 1.35em;
+  font-weight: 500;
+}
+.timerBox {
+  background-color: #17254c;
+  color: #fff;
+  height: 1.9em;
+  width: 1.3em;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  margin-left: 2px;
+}
+.timerDivider {
+  position: relative;
+  padding: 0.3rem;
+}
+.inputGroup {
+  margin-bottom: 2em;
+}
+.inputGroup .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: initial;
+  margin-bottom: 1.8em;
+}
+ .header .description .title {
+  text-transform: capitalize;
+  font-size: 1.1em;
+  font-weight: 700;
+  color: #05365c;
+  margin-bottom: 0.4em;
+}
+.desc {
+  font-size: 0.77em;
+  font-weight: 500;
+  color: #8e96a3;
+}
+ .edit {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: initial;
+  color: #1da1f2;
+  cursor: pointer;
+  border: none;
+  background-color: #fff;
+}
+.edit img {
+  height: 1.2em;
+  fill: #1da1f2;
+}
+ button.edit .btnDesc {
+  display: block;
+  margin-left: 0.6em;
+  font-weight: 500;
+  border: none;
+}
+ .main {
+  position: relative;
+  margin-top: 1em;
+}
+ .main img {
+  position: absolute;
+}
+.leadingIcon {
+  left: 0;
+  height: 2em;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: -4em;
+}
+.trailingIcon {
+  right: 0;
+  height: 1.5em;
+  top: 50%;
+  transform: translate(0, -50%);
+  right: 1.5em;
+}
+ .main input {
+  border: 2px solid rgba(224, 224, 224, 0.5);
+  width: 100%;
+  padding: 1em 4em 1em 4em;
+  font-size: 1.2em;
+  font-weight: 600;
+  border-radius: 6px;
+  background: linear-gradient(45deg, #f5f8ff, transparent);
+  color: #05365c;
+}
+ .main input:focus {
+  outline-color: #0077b6;
+}
+ .main input::placeholder {
+  font-weight: 400;
+  opacity: 0.5;
+}
+.col {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: initial;
+}
+.col .grp {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: initial;
+  width: 400px;
+  position: relative;
+}
+.col .grp .divider {
+  display: block;
+  font-size: 1.5em;
+  font-weight: 500;
+  color: #05365c;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.col .main {
+  margin-top: 0;
+  width: 400px;
+}
+.col .main input {
+  padding-right: 0;
+  padding-left: 0;
+  text-align: center;
+  background: none;
+}
+.col .main input:focus {
+  background: rgba(0, 119, 182, 0.05);
+}
+.col .main input[type="password"] {
+  text-align: left;
+  padding-left: 1.5em;
+  letter-spacing: 0.3em;
+}
+.trailingIcon {
+  opacity: 0.35;
+}
+.grp .date {
+  width: 42%;
+}
+.btnSubmit {
+  background-color: #035fff;
+  width: 100%;
+  padding: 1.2em 0;
+  margin-top: 0.75em;
+  border-color: #035fff;
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 1.2em;
+  font-weight: 500;
+  border-radius: 0.6em;
+  transition: all 250ms ease-in-out;
+  cursor: pointer;
+}
+.btnSubmit:hover {
+  background-color: #1254d6;
+}
+
+
+
+/* Styles for screens smaller than 768px */
+@media (max-width: 767px) {
+    .wrapper {
+      margin: 2em auto;
+      padding: 2em;
+    }
+  
+    .form {
+      width: 80%;
+      padding: 0;
+    }
+  
+    .formHeader .logo h1 {
+      font-size: 1.3em;
+      margin-left: -5em;
+    }
+  
+     .main img .leadingIcon {
+      left: -5em;
+    }
+  
+     .col .grp {
+      width: 70%;
+    }
+  
+     .col .main {
+      width: 100%;
+    }
+  
+     .col .main input {
+      padding: 1em;
+    }
+     .col .main input :first-child{
+        margin-right: 1em;
+    }
+     .col .grp .divider{
+        display:none;
+    }
+  
+     .grp .date {
+      width: 100%;
+    }
+  }
+  
+  /* Styles for screens between 768px and 1200px */
+  @media (min-width: 768px) and (max-width: 1200px) {
+    .wrapper {
+      margin: 4em auto;
+    }
+  
+    .form {
+      width: 80%;
+    }
+  
+    .formHeader .logo h1 {
+      font-size: 1.5em;
+      margin-left: -3em;
+    }
+  
+     .col .grp {
+      width: 250px;
+    }
+  
+     .col .date {
+      width: 250px;
+    }
+    .col .grp .divider{
+      display:none;
+  }
+  }
+  
+  /* Styles for screens larger than 1200px */
+  @media (min-width: 1201px) {
+    .wrapper {
+      margin: 6em auto;
+    }
+  
+    .form {
+      width: 55vw;
+    }
+  
+    .formHeader .logo h1 {
+      font-size: 1.75em;
+      margin-left: -3.5em;
+    }
+  
+     .col .grp {
+      width: 400px;
+    }
+  
+     .col .main .date {
+      width: 400px;
+    }
+  }
+  
+  @media (max-width: 672px) {
+    .form{
+      width: 100%;
+      font-size: 10px;
+      margin-left: 1em;
+    }
+    .formHeader{
+        margin-top: 3em;
+    }
+    .logo img{
+      right: 8.7em;
+    }
+
+    .btnSubmit{
+        position: relative;
+        top:24em;
+    }
+    .inputGroup {
+    margin-bottom: 0.2em;
+    }
+}
